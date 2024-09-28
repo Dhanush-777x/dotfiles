@@ -15,9 +15,9 @@ https://user-images.githubusercontent.com/67278339/211363959-9182ecb7-e56e-4598-
 <br>
 
 ## 🚀 Features
-**Experience the Magic of Customization with gh0stzk's bspwm dotfiles**
+**Experience the Magic of Customization with Beast's bspwm dotfiles**
 
-<sup>Welcome to the world of limitless customization! gh0stzk's dotfiles for bspwm offer a unique and exciting experience with 18 different themes, each featuring captivating color schemes, styles and personality. Immerse yourself in a visual journey that will transform your workspace in an impressive way.</sup>
+<sup>Welcome to the world of limitless customization! Beast's dotfiles for bspwm offer a unique and exciting experience with 18 different themes, each featuring captivating color schemes, styles and personality. Immerse yourself in a visual journey that will transform your workspace in an impressive way.</sup>
 
 **Change themes on the fly**
 
@@ -120,9 +120,6 @@ And you can adjust the transparency of your open windows with a simple key combi
   <sup>Access the scratchpad functionality, a terminal window you can show or hide for tasks when you don't want the window taking up unnecessary space.</sup>
 
 Transform your user experience with gh0stzk's dotfiles for bspwm! Install now and breathe life into your desktop with style and personality.
-
-## :book: Wiki
-I already started writing the [**Wiki**](https://github.com/gh0stzk/dotfiles/wiki), you should give it a read. If it is your first time with a WM, you may be interested in reading [First steps after installing the dotfiles](https://github.com/gh0stzk/dotfiles/wiki/Firsts-steps-after-installing) or maybe read [frequently asked questions and answers](https://github.com/gh0stzk/dotfiles/wiki/Questions---Answers) [Keybinds](https://github.com/gh0stzk/dotfiles/wiki/Keyboard-Shortcuts) [Firefox Theme](https://github.com/gh0stzk/dotfiles/wiki/Firefox-Theme).
 
 <br>
 
