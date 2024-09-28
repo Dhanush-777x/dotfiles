@@ -70,7 +70,7 @@ logo "Installing needed packages.."
 
 dependencias=(alacritty base-devel bat brightnessctl bspwm cava cmatrix dunst eza feh gvfs-mtp firefox geany git kitty imagemagick jq \
 			        jgmenu libwebp maim mpc mpd neovim ncmpcpp npm pamixer pacman-contrib \
-			        papirus-icon-theme betterlockscreen picom-ftlabs-git pipes.sh playerctl polybar polkit-gnome python-gobject ranger \
+			        papirus-icon-theme betterlockscreen picom-ftlabs-git pipes.sh playerctl playerctl polybar polkit-gnome python-gobject ranger \
 			        redshift rofi rustup sl sxhkd tmux ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
 			        ttf-joypixels ttf-terminus-nerd ttf-ubuntu-mono-nerd ueberzug webp-pixbuf-loader xclip xdg-user-dirs \
 			        xdo xdotool xsettingsd xorg-xdpyinfo xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot \
