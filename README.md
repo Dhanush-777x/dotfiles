@@ -1,4 +1,4 @@
-# A complete BSPWM Window Manager Environment
+# BSPWM Dotfiles Installation Script
 <div align = center>
 
 
@@ -8,8 +8,6 @@
 &ensp;[<kbd> <br> Features <br> </kbd>](#-features)&ensp;
 &ensp;[<kbd> <br> Themes <br> </kbd>](#-the-themes)&ensp;
 &ensp;[<kbd> <br> Keybindings <br> </kbd>](#very-useful-keybindigs-to-know)&ensp;
-&ensp;[<kbd> <br> Wiki <br> </kbd>](https://github.com/gh0stzk/dotfiles/wiki)&ensp;
-&ensp;[<kbd> <br> En Español <br> </kbd>](INICIO.md)&ensp;
 <br><br><br></div>
 
 https://user-images.githubusercontent.com/67278339/211363959-9182ecb7-e56e-4598-afed-f352c5d2979e.mp4
@@ -419,7 +417,7 @@ Plugins included [Neovim setup wiki](https://github.com/gh0stzk/dotfiles/wiki/Ne
 |:-|:-|
 |<kbd>super</kbd> + <kbd>Enter</kbd><br><kbd>super</kbd> + <kbd>alt</kbd> + <kbd>Enter</kbd>| Open a terminal<br>Open a floating terminal.
 |<kbd>alt</kbd> + <kbd>@space</kbd>| Display menu to select a theme.
-|<kbd>super</kbd> + <kbd>@space</kbd>| Apps Menu.
+|<kbd>ctrl</kbd> + <kbd>@space</kbd>| Apps Menu.
 |<kbd>super</kbd> + <kbd>alt</kbd> + <kbd>w</kbd>| Opens a menu to select a wallpaper.
 |<kbd>super</kbd> + <kbd>alt</kbd> + <kbd>h</kbd><br><kbd>super</kbd> + <kbd>alt</kbd> + <kbd>u</kbd>|Hides bar/s<br>unhide bar/s
 |<kbd>super</kbd> + <kbd>alt</kbd> + <kbd>s</kbd>| Takes screenshot.
@@ -435,13 +433,10 @@ And more.. You need to look sxhkdrc file for more, or press F1 for a cheatsheet.
 The installer only works for **ARCH** Linux, and based distros.
 
 <b>Open a terminal in HOME</b>
-- **First download the installer**
+- **clone the repo**
 ```sh
-curl https://raw.githubusercontent.com/gh0stzk/dotfiles/master/RiceInstaller -o $HOME/RiceInstaller
-
-# Maybe you want a short url??
-
-curl -L https://is.gd/gh0stzk_dotfiles -o $HOME/RiceInstaller
+git clone https://github.com/Dhanush-777x/dotfiles.git
+cd dotfiles
 ```
 - **Now give it execute permissions**
 ```sh
@@ -452,4 +447,4 @@ chmod +x RiceInstaller
 ./RiceInstaller
 ```
 
-#### Thank you [gh0stzk](https://github.com/gh0stzk) for the script. I have modified the script accroding to my requirements. Thank you :)
+#### Thank you [gh0stzk](https://github.com/gh0stzk) for the script. I have fixed few things and modified the script accroding to my requirements. Thank you :)
