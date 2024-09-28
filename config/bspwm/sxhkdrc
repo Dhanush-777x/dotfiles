@@ -25,6 +25,15 @@ super + alt + Return
 ctrl + @space
 	OpenApps --menu
 
+#open Brave Browser
+super + w
+	flatpak run com.brave.Browser
+
+
+# Open Nautilus File Manager
+super + e
+	nautilus
+
 #####
 
 # Apps (browser, editor, filemanager)
