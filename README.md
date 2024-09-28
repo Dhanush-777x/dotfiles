@@ -433,10 +433,11 @@ And more.. You need to look sxhkdrc file for more, or press F1 for a cheatsheet.
 The installer only works for **ARCH** Linux, and based distros.
 
 <b>Open a terminal in HOME</b>
-- **clone the repo**
+- **Script installer**
 ```sh
-git clone https://github.com/Dhanush-777x/dotfiles.git
-cd dotfiles
+
+curl https://raw.githubusercontent.com/Dhanush-777x/dotfiles/main/RiceInstaller -o $HOME/RiceInstaller
+
 ```
 - **Now give it execute permissions**
 ```sh
