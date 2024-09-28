@@ -5,9 +5,8 @@
 #  ██╔══██╗██║██║     ██╔══╝      ██║██║╚██╗██║╚════██║   ██║   ██╔══██║██║     ██║     ██╔══╝  ██╔══██╗
 #  ██║  ██║██║╚██████╗███████╗    ██║██║ ╚████║███████║   ██║   ██║  ██║███████╗███████╗███████╗██║  ██║
 #  ╚═╝  ╚═╝╚═╝ ╚═════╝╚══════╝    ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
-#   Script to install my dotfiles
-#   Author: z0mbi3
-#   url: https://github.com/gh0stzk
+#   Script to install beast dotfiles
+#   Author: beast
 
 CRE=$(tput setaf 1)
 CYE=$(tput setaf 3)
@@ -23,23 +22,15 @@ logo () {
 
     local text="${1:?}"
     echo -en "
-	               %%%
-	        %%%%%//%%%%%
-	      %%************%%%
-	  (%%//############*****%%
-	%%%%%**###&&&&&&&&&###**//
-	%%(**##&&&#########&&&##**
-	%%(**##*****#####*****##**%%%
-	%%(**##     *****     ##**
-	   //##   @@**   @@   ##//
-	     ##     **###     ##
-	     #######     #####//
-	       ###**&&&&&**###
-	       &&&         &&&
-	       &&&////   &&
-	          &&//@@@**
-	            ..***
-    z0mbi3 Dotfiles\n\n"
+
+_____________________   _____    ____________________
+\______   \_   _____/  /  _  \  /   _____/\__    ___/
+ |    |  _/|    __)_  /  /_\  \ \_____  \   |    |   
+ |    |   \|        \/    |    \/        \  |    |   
+ |______  /_______  /\____|__  /_______  /  |____|   
+        \/        \/         \/        \/            
+    
+    Beast Dotfiles\n\n"
     printf ' %s [%s%s %s%s %s]%s\n\n' "${CRE}" "${CNC}" "${CYE}" "${text}" "${CNC}" "${CRE}" "${CNC}"
 }
 
@@ -77,9 +68,9 @@ clear
 
 logo "Installing needed packages.."
 
-dependencias=(alacritty base-devel bat brightnessctl bspwm dunst eza feh gvfs-mtp firefox geany git kitty imagemagick jq \
+dependencias=(alacritty base-devel bat brightnessctl bspwm cava cmatrix dunst eza feh gvfs-mtp firefox geany git kitty imagemagick jq \
 			        jgmenu libwebp maim mpc mpd neovim ncmpcpp npm pamixer pacman-contrib \
-			        papirus-icon-theme betterlockscreen picom-ftlabs-git playerctl polybar polkit-gnome python-gobject ranger \
+			        papirus-icon-theme betterlockscreen picom-ftlabs-git pipes.sh playerctl polybar polkit-gnome python-gobject ranger \
 			        redshift rofi rustup sxhkd tmux ttf-inconsolata ttf-jetbrains-mono ttf-jetbrains-mono-nerd \
 			        ttf-joypixels ttf-terminus-nerd ttf-ubuntu-mono-nerd ueberzug webp-pixbuf-loader xclip xdg-user-dirs \
 			        xdo xdotool xsettingsd xorg-xdpyinfo xorg-xkill xorg-xprop xorg-xrandr xorg-xsetroot \
@@ -183,7 +174,7 @@ fi
 
 logo "Downloading dotfiles"
 
-repo_url="https://github.com/gh0stzk/dotfiles"
+repo_url="https://github.com/Dhanush-777x/dotfiles"
 repo_dir="$HOME/dotfiles"
 
 # Verifies if the folder of the repository exists, and if it does, deletes it

@@ -1,8 +1,6 @@
 # A complete BSPWM Window Manager Environment
 <div align = center>
 
-![bspwm-dotfiles](https://github.com/gh0stzk/dotfiles/assets/67278339/0340846a-74d4-4a43-9430-142b0832738d)
-
 
 
 
@@ -19,8 +17,6 @@ https://user-images.githubusercontent.com/67278339/211363959-9182ecb7-e56e-4598-
 <br>
 
 ## 🚀 Features
-<img src="https://user-images.githubusercontent.com/67278339/221605474-21d65156-0cf7-485c-bd1a-40792c37817e.png" alt="Linux Fetch" align="right" width="450">
-
 **Experience the Magic of Customization with gh0stzk's bspwm dotfiles**
 
 <sup>Welcome to the world of limitless customization! gh0stzk's dotfiles for bspwm offer a unique and exciting experience with 18 different themes, each featuring captivating color schemes, styles and personality. Immerse yourself in a visual journey that will transform your workspace in an impressive way.</sup>
@@ -455,3 +451,5 @@ chmod +x RiceInstaller
 ```sh
 ./RiceInstaller
 ```
+
+#### Thank you [gh0stzk](https://github.com/gh0stzk) for the script. I have modified the script accroding to my requirements. Thank you :)
