@@ -14,7 +14,7 @@
 
 
 # Set the player
-[ -n "$(pgrep spotify)" ] && Control="spotify" || Control="MPD"
+[ -n "$(pgrep spotify)" ] && Control="spotify" || Control="MPD" || Control="rhythmbox"
 
 # Here the cover image will be saved.
 Cover=/tmp/cover.png
