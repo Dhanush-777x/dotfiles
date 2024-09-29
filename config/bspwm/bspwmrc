@@ -32,7 +32,7 @@ done
 # workspace & windows rules
 bspc rule -a Brave-browser:crx_hnpfjngllnobngcgfapefoaidbinmjnm desktop=^6
 bspc rule -a Spotify:spotify desktop=^6 state=tiled
-
+bspc rule -a Todoist:todoist state=floating sticky=on  focus=on
 
 ## For two or three monitors configuration see https://github.com/gh0stzk/dotfiles/wiki/Two-or-more-monitors-setup
 
