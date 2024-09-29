@@ -90,7 +90,7 @@ pidof -q greenclip || { greenclip daemon & }
 pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & }
 
 #set natural scrolling
-xinput set-prop 20 "libinput Natural Scrolling Enabled" 1
+xinput set-prop 15 "libinput Natural Scrolling Enabled" 1
 
 
 # End one time code
