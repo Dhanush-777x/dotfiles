@@ -9,7 +9,7 @@ follow = mouse
 
 font = JetBrainsMono NF Medium 9
 width = 300
-height = 300
+height = 250
 origin = top-right
 offset = 10x72
 scale = 0
@@ -28,7 +28,7 @@ horizontal_padding = 15
 text_icon_padding = 0
 
 frame_width = 0
-frame_color = "#1a1b26"
+frame_color = "#1e1e2e"
 
 sort = no
 idle_threshold = 0
@@ -37,7 +37,7 @@ font = JetBrainsMono NF Medium 9
 line_height = 0
 
 markup = full
-format = "<span size='xx-large' font_desc='Cantarell 9' weight='bold' foreground='#7aa2f7'>%s</span>\n%b"
+format = "<span size='large' font_desc='Cantarell 9' weight='bold' foreground='#b4befe'>%s</span>\n%b"
 alignment = center
 vertical_alignment = center
 
@@ -50,10 +50,10 @@ hide_duplicate_count = true
 show_indicators = yes
 
 enable_recursive_icon_lookup = true
-icon_theme = "Tokyonight-Moon, Adwaita"
+icon_theme = "Papirus-Dark, Adwaita"
 icon_position = left
-min_icon_size = 60
-max_icon_size = 90
+min_icon_size = 40
+max_icon_size = 40
 icon_corner_radius = 6
 
 sticky_history = yes
@@ -84,15 +84,15 @@ class = Dunst
 
 [urgency_low]
 timeout = 3
-background = "#1a1b26"
-foreground = "#9ece6a"
+background = "#1e1e2e"
+foreground = "#a6e3a1"
 
 [urgency_normal]
 timeout = 5
-background = "#1a1b26"
+background = "#1e1e2e"
 foreground = "#a9b1d6"
 
 [urgency_critical]
 timeout = 0
-background = "#1a1b26"
-foreground = "#f7768e"
+background = "#1e1e2e"
+foreground = "#f38ba8"

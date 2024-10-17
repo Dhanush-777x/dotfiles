@@ -12,7 +12,7 @@ from ranger.gui.color import (
 
 
 class Default(ColorScheme):
-    progress_bar_color = blue
+    progress_bar_color = green
 
     def use(self, context):  # pylint: disable=too-many-branches,too-many-statements
         fg, bg, attr = default_colors

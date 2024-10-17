@@ -11,7 +11,7 @@
 #	Copyright (C) 2021-2024 gh0stzk <z0mbi3.zk@protonmail.com>
 
 # Current rice
-read -r RICETHEME < "${HOME}"/.config/bspwm/.rice
+read -r RICETHEME <"${HOME}"/.config/bspwm/.rice
 
 # Set environment variables
 export PATH="$HOME/.config/bspwm/src:$PATH"
@@ -25,17 +25,18 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Default 1 monitor with 6 workspaces
 for monitor in $(xrandr -q | grep -w 'connected' | cut -d' ' -f1); do
-    bspc monitor "$monitor" -d '1' '2' '3' '4' '5' '6'
-    #bspc monitor "$monitor" -d '' '' '' '' '' ''
+  bspc monitor "$monitor" -d '1' '2' '3' '4' '5' '6'
+  #bspc monitor "$monitor" -d '' '' '' '' '' ''
 done
 
 # workspace & windows rules
 bspc rule -a Brave-browser:crx_hnpfjngllnobngcgfapefoaidbinmjnm desktop=^6
-bspc rule -a Spotify:spotify desktop=^6 state=tiled
-bspc rule -a Todoist:todoist state=floating sticky=on  focus=on
+bspc rule -a Spotify:spotify state=floating sticky=on focus=on
+bspc rule -a todoist-nativefier-409272:todoist-nativefier-409272 state=floating sticky=on focus=on
+bspc rule -a firefox state=floating sticky=on
+bspc rule -a Brave-browser:crx_knaiokfnmjjldlfhlioejgcompgenfhb state=floating
 
 ## For two or three monitors configuration see https://github.com/gh0stzk/dotfiles/wiki/Two-or-more-monitors-setup
-
 
 #  ╔╗ ╔═╗╔═╗╦ ╦╔╦╗  ╔═╗╔═╗╔╗╔╔═╗╦╔═╗
 #  ╠╩╗╚═╗╠═╝║║║║║║  ║  ║ ║║║║╠╣ ║║ ╦
@@ -43,22 +44,23 @@ bspc rule -a Todoist:todoist state=floating sticky=on  focus=on
 
 bspc config external_rules_command "${HOME}"/.config/bspwm/src/ExternalRules
 
-bspc config window_gap                5
-bspc config split_ratio               0.51
-bspc config single_monocle            true
-bspc config borderless_monocle        false
-bspc config gapless_monocle           false
+bspc config window_gap 5
+bspc config split_ratio 0.51
+bspc config single_monocle true
+bspc config borderless_monocle false
+bspc config gapless_monocle false
 
-bspc config focus_follows_pointer     true
-bspc config pointer_follows_focus     false
-bspc config pointer_motion_interval   5
-bspc config pointer_modifier          mod4
-bspc config pointer_action1           move
-bspc config pointer_action2           resize_side
-bspc config pointer_action3           resize_corner
-bspc config focused_border_color      '#ffffff'
+bspc config focus_follows_pointer true
+bspc config pointer_follows_focus false
+bspc config pointer_motion_interval 5
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+bspc config focused_border_color '#ffffff'
 
 bspc rule -a scratch sticky=on state=floating focus=on
+bspc node -f last
 
 #  ╔═╗╦ ╦╔╦╗╔═╗╔═╗╔╦╗╔═╗╦═╗╔╦╗
 #  ╠═╣║ ║ ║ ║ ║╚═╗ ║ ╠═╣╠╦╝ ║
@@ -90,7 +92,6 @@ pidof -q greenclip || { greenclip daemon & }
 pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & }
 
 #set natural scrolling
-xinput set-prop 20 "libinput Natural Scrolling Enabled" 1
-
+~/.config/bspwm/src/set-natural-scroll.sh &
 
 # End one time code

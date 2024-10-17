@@ -13,7 +13,7 @@ F1
 
 #|||----- Applications -----|||#
 
-# Open Terminal (alacritty)
+# Open Terminal (kitty)
 ctrl + Return
 	OpenApps --terminal
 
@@ -51,7 +51,8 @@ shift + alt + p
 super + right_click
     bspc node -r
 
-
+ctrl + alt + y
+    bspc node -f last
 
 #|||----- System Keybindings -----|||#
 
@@ -68,20 +69,24 @@ super + alt + t
   xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/jgmenu/menu.txt --config-file=~/.config/bspwm/jgmenurc
 
 # Scratchpad
-super + alt + o
-	tdrop -a -w 70% -h 35% -y 0 -x 15%  --class scratch alacritty --class=scratch
+ctrl + alt + o
+	tdrop -a -w 70% -h 35% -y 0 -x 15%  --class scratch kitty --class=scratch
 
-super + alt + m
-    tdrop -ma -w 800 -h 0 -x 100 -y 50 --class=Todoist flatpak run com.todoist.Todoist
+ctrl + alt + m
+    tdrop -ma -w 50% -h 35% -y 0 -x 25% --class=todoist-nativefier-409272 todoist-nativefier --class=scratch
 
+ctrl + alt + n
+    tdrop -ma -w 75% -h 85% -x 15% -y 8% --class=firefox firefox --class=scratch
 
+ctrl + alt + i
+    tdrop -ma -w 70% -h 75% -x 15% -y 10% --class=spotify flatpak run com.spotify.Client --class=scratch
 
 # Power off, Reboot, Log out, Lockscreen, kill an app
 ctrl + super + alt + {p,r,q,l,k}
 	{systemctl poweroff, systemctl reboot,bspc quit,physlock -d,xkill}
 
 # Hide/Show Bar (Polybar and/or eww)
-super + alt + {u}
+super + alt + {u, i}
 	HideBar {-h,-u}
 
 # Change transparency on focused window
