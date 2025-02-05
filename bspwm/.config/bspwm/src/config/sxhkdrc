@@ -1,0 +1,255 @@
+#  ███████╗██╗  ██╗██╗  ██╗██╗  ██╗██████╗ ██████╗  ██████╗
+#  ██╔════╝╚██╗██╔╝██║  ██║██║ ██╔╝██╔══██╗██╔══██╗██╔════╝
+#  ███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║██████╔╝██║     
+#  ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║     
+#  ███████║██╔╝ ██╗██║  ██║██║  ██╗██████╔╝██║  ██║╚██████╗
+#  ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝
+#	z0mbi3			https://github.com/gh0stzk/dotfiles
+#
+
+# Show help
+F1
+	OpenApps --KeyHelp
+
+#|||----- Applications -----|||#
+
+# Open Terminal (kitty)
+ctrl + Return
+	OpenApps --terminal
+
+# Open floating Terminal
+super + alt + Return
+	OpenApps --floating
+
+# Application menu
+ctrl + @space
+	OpenApps --menu
+
+#open Brave Browser
+super + w
+    brave	
+
+# Open Nautilus File Manager
+super + e
+	nautilus
+
+#####
+
+# Apps (browser, editor, filemanager)
+shift + alt + {b,g,n}
+	OpenApps {--browser,--editor,--filemanager}
+
+# Terminal apps (ranger, nvim, ncmpcpp)
+shift + alt + {r,v,k}
+	OpenApps {--yazi,--nvim,--music}
+
+# Pavucontrol
+shift + alt + p
+	OpenApps --soundcontrol
+
+super + right_click
+    bspc node -r
+
+ctrl + alt + y
+    bspc node -f last
+
+#|||----- System Keybindings -----|||#
+
+# Theme Selector
+super + shift + t 
+	RiceSelector
+
+#Terminal Selector
+super + alt + t
+	Term --selecterm
+
+# jgmenu
+~button3
+  xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/jgmenu/menu.txt --config-file=~/.config/bspwm/jgmenurc
+
+# Scratchpad
+ctrl + alt + o
+	tdrop -a -w 70% -h 50% -y 25% -x 15%  --class scratch kitty --class=scratch
+
+
+ctrl + alt + m
+    tdrop -ma -w 50% -h 35% -y 0 -x 25% --class=Todoist todoist --class=scratch
+
+ctrl + alt + n
+    tdrop -ma -w 75% -h 85% -x 12% -y 8% --class=firefox firefox --class=scratch
+
+ctrl + alt + i
+    tdrop -ma -w 70% -h 75% -x 15% -y 15% --class=spotify spotify --class=scratch
+
+# Power off, Reboot, Log out, Lockscreen, kill an app
+ctrl + super + alt + {p,r,q,l,k}
+	{systemctl poweroff, systemctl reboot,bspc quit,physlock -d,xkill}
+
+# Hide/Show Bar (Polybar and/or eww)
+super + alt + {u, i}
+	HideBar {-h,-u}
+
+# Change transparency on focused window
+ctrl + alt + {plus,minus,t}
+	picom-trans {-c -o +3,-c -o -1,-c -d}
+
+# Random wallpaper
+super + alt + w
+	WallSelect
+
+# Mount Android phones
+super + alt + a
+	OpenApps --android
+
+# Network Manager
+super + alt + n
+	OpenApps --netmanager
+
+super + alt + m
+	OpenApps --mixer
+
+# Clipboard
+super + v
+	OpenApps --clipboard
+
+# Screenshot
+super + shift + s
+	OpenApps --screenshot
+
+# Bluetooth
+super + alt + b
+	OpenApps --bluetooth
+
+# PowerMenu
+super + BackSpace
+	OpenApps --powermenu
+
+# Manage brightness
+#
+XF86MonBrightnessUp
+    brightnessctl -d nvidia_0 set +5%
+
+XF86MonBrightnessDown
+    brightnessctl -d nvidia_0 set 5%-
+
+#emoji selector
+super + alt + o
+    OpenApps --emoji
+
+# Volume control
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	Volume{ --inc, --dec, --toggle}
+
+# Music Control
+XF86Audio{Next,Prev,Play,Stop}
+	MediaControl {--next,--previous,--toggle,--stop}
+
+
+#|||----- Bspwm hotkeys -----|||#
+
+# Reload BSPWM
+super + alt + r
+	bspc wm -r
+
+# close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+	
+# Reload Keybindings
+super + Escape
+	pkill -USR1 -x sxhkd; dunstify -u low -i ~/.config/bspwm/assets/reload.svg 'sxhkd' 'The configuration file has been reloaded successfully!'
+
+#####
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+ctrl + alt {m,x,s,p}
+	bspc node -g {marked,locked,sticky,private}
+
+# Hide/Unhide Window
+ctrl + alt + h
+	BspHideNode
+
+#####
+
+# rotate desktop
+super + r
+	bspc node @/ --rotate {90,-90}
+
+# Change focus of the Node or Swap Nodes
+super + {_,ctrl + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+super + {_,ctrl + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# Switch workspace
+super + {comma, period}
+	bspc desktop -f {prev,next}.local
+
+# Switch Workspace according to Workspace Number
+super + y
+    bspc desktop -f ^1
+
+
+super + u
+    bspc desktop -f ^2
+
+
+super + i
+    bspc desktop -f ^3
+
+
+super + o
+    bspc desktop -f ^4
+
+
+super + p
+    bspc desktop -f ^5
+
+
+super + bracketleft
+    bspc desktop -f ^6
+
+# focus or send to the given desktop
+super + {_,alt + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Send focused Node to workspace directionally
+super + alt + {h,l}
+	bspc node -d {prev,next} '--follow'
+
+# focus the last node/desktop
+super + {comma,Tab}
+	bspc {node,desktop} -f last
+
+#####
+
+# preselect the direction
+super + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# cancel the preselection for the focused node
+super + alt + space
+	bspc node -p cancel
+
+#####
+	
+# expand a window
+ctrl + alt {Left,Down,Up,Right}
+	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
+
+# contract a window
+ctrl + shift + alt + {Left,Down,Up,Right}
+	bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
+
+# move a floating window
+alt + shift {Left,Down,Up,Right}
+	bspc node -v {-10 0,0 10,0 -10,10 0}
