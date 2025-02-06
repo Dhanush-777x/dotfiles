@@ -69,8 +69,8 @@ super + alt + t
 
 # Scratchpad
 ctrl + alt + o
-	tdrop -a -w 70% -h 50% -y 25% -x 15%  --class scratch kitty --class=scratch
-
+#	tdrop -a -w 50% -h 50% -y 25% -x 5% kitty
+    tdrop -ma -w 75% -h 50% -x 12% -y 25% --class=yazi kitty --class=scratch -e tmux -u new-session -A -s yazi 'yazi'
 
 ctrl + alt + m
     tdrop -ma -w 50% -h 35% -y 0 -x 25% --class=Todoist todoist --class=scratch
