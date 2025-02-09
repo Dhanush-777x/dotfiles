@@ -95,7 +95,7 @@ pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome/polkit-g
 
 # Launch Apps 
 #
-~/bspwm_autostart.sh &
+~/scripts/bspwm_autostart.sh &
 
 
 # End one time code
