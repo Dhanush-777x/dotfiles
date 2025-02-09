@@ -94,6 +94,7 @@ pidof -q greenclip || { greenclip daemon & }
 pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & }
 
 # Launch Apps 
+#
 ~/bspwm_autostart.sh &
 
 

@@ -15,6 +15,7 @@ export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export SUDO_PROMPT="Deploying root access for %u. Password pls: "
 export BAT_THEME="base16"
 
+
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
@@ -139,7 +140,7 @@ alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
 alias music="ncmpcpp"
 
-alias cat="bat --theme=base16"
+#alias cat="bat --theme=base16"
 alias ls='eza --icons=always --color=always -a'
 alias ll='eza --icons=always --color=always -la'
 alias btop='btop --utf-force'

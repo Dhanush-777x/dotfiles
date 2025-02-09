@@ -335,3 +335,8 @@ desc = "Enter the child directory, or open the file"
 on   = "<RIGHT>"
 run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
+
+[[manager.prepend_keymap]]
+on   = "!"
+run  = 'shell "$SHELL" --block'
+desc = "Open shell here"
