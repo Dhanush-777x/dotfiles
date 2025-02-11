@@ -124,6 +124,10 @@ super + alt + b
 super + BackSpace
 	OpenApps --powermenu
 
+# Show Playing Media
+super + m
+    ~/scripts/show-media.sh
+
 # Manage brightness
 #
 XF86MonBrightnessUp
@@ -162,7 +166,7 @@ super + Escape
 #####
 
 # alternate between the tiled and monocle layout
-super + m
+super + alt + m
 	bspc desktop -l next
 
 # set the window state
