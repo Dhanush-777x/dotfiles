@@ -79,7 +79,7 @@ ctrl + alt + n
     tdrop -ma -w 75% -h 85% -x 12% -y 8% --class=firefox firefox --class=scratch
 
 ctrl + alt + i
-    tdrop -ma -w 70% -h 75% -x 15% -y 15% --class=spotify spotify --class=scratch
+    tdrop -ma -w 70% -h 75% -x 15% -y 15% --class=spotify flatpak run com.spotify.Client --class=scratch
 
 # Power off, Reboot, Log out, Lockscreen, kill an app
 ctrl + super + alt + {p,r,q,l,k}
@@ -127,6 +127,16 @@ super + BackSpace
 # Show Playing Media
 super + m
     ~/scripts/show-media.sh
+
+# Media Control
+XF86AudioPlay
+    playerctl play-pause
+
+XF86AudioNext
+    playerctl next
+
+XF86AudioPrev
+    playerctl previous
 
 # Manage brightness
 #

@@ -176,3 +176,5 @@ function scm()
 [[ -f /home/dhanushsm/.dart-cli-completion/zsh-config.zsh ]] && . /home/dhanushsm/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+
+export PATH=$PATH:/home/dhanushsm/.spicetify
