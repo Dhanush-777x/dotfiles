@@ -2,10 +2,10 @@
 # Basic options
 default_keybindings = true
 use_nerdfont = true
-notify = true
+notify = false 
 gapless = true
 flip_status_indicators=true
-shuffle = false
+shuffle = true 
 repeat = 'off'
 
 [keybindings]
@@ -175,7 +175,7 @@ repeat = 'off'
 [theme]
 background = "#1e1e2e"
 primary = "white"
-secondary = "#1e1e2e"
+secondary = "white"
 title = "#b4befe"
 playing = "black"
 playing_selected = "black"

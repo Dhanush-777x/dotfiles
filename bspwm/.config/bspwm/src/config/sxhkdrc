@@ -67,11 +67,16 @@ super + alt + t
 ~button3
   xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/jgmenu/menu.txt --config-file=~/.config/bspwm/jgmenurc
 
-# Scratchpad
+#Scratchpad
 ctrl + alt + o
-#	tdrop -a -w 50% -h 50% -y 25% -x 5% kitty
-    tdrop -ma -w 75% -h 50% -x 12% -y 25% --class=yazi kitty --class=scratch -e tmux -u new-session -A -s yazi 'yazi'
+    tdrop -ma -w 75% -h 50% -x 12% -y 25% --class=ncspot kitty --class=scratch -e \
+    tmux -u new-session -d -s ncspot 'ncspot' \; \
+    new-window -n yazi 'yazi' \; \
+    attach-session -t ncspot
 
+# ctrl + alt + i
+#     tdrop -ma -w 75% -h 50% -x 12% -y 25% --class=ncspot kitty --class=scratch -e tmux -u new-session -A -s ncspot 'ncspot'
+#
 ctrl + alt + m
     tdrop -ma -w 50% -h 35% -y 0 -x 25% --class=Todoist todoist --class=scratch
 
@@ -79,8 +84,8 @@ ctrl + alt + n
     tdrop -ma -w 75% -h 85% -x 12% -y 8% --class=firefox firefox --class=scratch
 
 ctrl + alt + i
-    tdrop -ma -w 70% -h 75% -x 15% -y 15% --class=spotify flatpak run com.spotify.Client --class=scratch
-
+     tdrop -ma -w 70% -h 75% -x 15% -y 15% --class=spotify spotify --class=scratch
+#
 # Power off, Reboot, Log out, Lockscreen, kill an app
 ctrl + super + alt + {p,r,q,l,k}
 	{systemctl poweroff, systemctl reboot,bspc quit,physlock -d,xkill}

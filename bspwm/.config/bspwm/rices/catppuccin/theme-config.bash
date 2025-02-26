@@ -39,7 +39,7 @@ SHADOW_C="#000000"		# Shadow color
 P_CORNER_R="8"			# Corner radius (0 = disabled)
 P_BLUR="true"			# Blur true|false
 P_ANIMATIONS="@"		# (@ = enable) (# = disable)
-P_TERM_OPACITY="0.95"	# Terminal transparency. Range: 0.1 - 1.0 (1.0 = disabled)
+P_TERM_OPACITY="0.8"	# Terminal transparency. Range: 0.1 - 1.0 (1.0 = disabled)
 
 # Dunst
 dunst_offset='(20, 60)'
@@ -63,5 +63,5 @@ geany_theme="z0mbi3-TokyoNight"
 # - CustomAnimated (Set an animated wallpaper. "mp4, mkv, gif")
 ENGINE="CustomImage"
 CUSTOM_DIR="/path/to/dir"
-CUSTOM_WALL="/mnt/3462937862933E14/Wallpaper Customisation/wallpapers/catppuccin_mocha_cat.png"
+CUSTOM_WALL="/mnt/3462937862933E14/Wallpaper Customisation/Wallpapers/result (1).png"
 CUSTOM_ANIMATED="/home/dhanushsm/Downloads/raiden-mortal-kombat.3840x2160.mp4"

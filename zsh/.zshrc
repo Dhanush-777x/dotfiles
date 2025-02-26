@@ -151,7 +151,7 @@ alias ranger='ranger /mnt/3462937862933E14/'
 alias tmux="tmux -u"
 alias tmtd="~/tmux-tdrop-setup.sh"
 alias obs="cd /mnt/3462937862933E14/Obsidian-files/Dhanushsm-vault"
-
+alias ff="fastfetch"
 
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
@@ -178,3 +178,5 @@ function scm()
 
 
 export PATH=$PATH:/home/dhanushsm/.spicetify
+export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=qt6ct
