@@ -6,16 +6,6 @@ dunstify "Welcome Back Dhanush!" "Setting Up Your Workspace. Please Wait..." -t 
 # Wait for BSPWM to initialize completely
 sleep 2
 
-# Open Personal Brave in the 1st workspace
-brave &
-sleep 1  
-bspc node -d 1
-
-# Open Work Brave in the 1st workspace
-brave &
-sleep 1  
-bspc node -d 2
-
 # Start two tmux sessions
 tmux -u new-session -d -s Term        # Create Term session
 tmux -u new-session -d -s nvim        # Create nvim session
@@ -28,7 +18,7 @@ tmux -u detach -s nvim
 kitty --class "Term" -e tmux -u attach-session -t Term &
 sleep 1  # Wait for the terminal to launch
 
-# Move it to workspace 2
+# Move it to workspace 3
 bspc node -d 3
 sleep 1  
 
@@ -36,6 +26,19 @@ sleep 1
 gtk-launch brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop &
 sleep 1
 bspc node -d 6
+sleep 1
+
+# Open Work Brave in the 1st workspace
+brave &
+sleep 1  
+bspc node -d 2
+sleep 1
+
+# Open Personal Brave in the 1st workspace
+brave &
+sleep 1  
+bspc node -d 1
+
 
 # Return focus to the first workspace
 bspc desktop -f 2
