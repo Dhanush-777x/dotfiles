@@ -36,4 +36,12 @@ Lets say if you want to inject nvim config files. Just run,
 stow nvim
 ```
 
+>[!NOTE]
+> To change the color of the tty for ly (display manager)
+> - Copy this line and paste it inside `/lib/systemd/system/ly.service` file
+
+```bash
+ExecStartPre=/usr/bin/printf '%%b' '\e]P0FFC5C4\e]P7FFFFFF\ec' # Paste it just above ExecStart=/usr/bin/ly
+```
+
 Enjoy :)
