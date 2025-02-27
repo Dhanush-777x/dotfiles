@@ -6,6 +6,12 @@ dunstify "Welcome Back Dhanush!" "Setting Up Your Workspace. Please Wait..." -t 
 # Wait for BSPWM to initialize completely
 sleep 2
 
+# Open Whatsapp in the 6th workspace
+gtk-launch brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop &
+sleep 1
+bspc node -d 6
+sleep 1
+
 # Start two tmux sessions
 tmux -u new-session -d -s Term        # Create Term session
 tmux -u new-session -d -s nvim        # Create nvim session
@@ -22,13 +28,7 @@ sleep 1  # Wait for the terminal to launch
 bspc node -d 3
 sleep 1  
 
-# Open Whatsapp in the 6th workspace
-gtk-launch brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop &
-sleep 1
-bspc node -d 6
-sleep 1
-
-# Open Work Brave in the 1st workspace
+# Open Work Brave in the 2nd workspace
 brave &
 sleep 1  
 bspc node -d 2

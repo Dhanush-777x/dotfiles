@@ -180,3 +180,4 @@ function scm()
 export PATH=$PATH:/home/dhanushsm/.spicetify
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_QPA_PLATFORMTHEME=qt6ct
+export PATH="$HOME/.cargo/bin:$PATH"

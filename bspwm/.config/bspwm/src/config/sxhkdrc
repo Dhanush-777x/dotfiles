@@ -74,11 +74,12 @@ ctrl + alt + o
     new-window -n yazi 'yazi' \; \
     attach-session -t ncspot
 
-# ctrl + alt + i
-#     tdrop -ma -w 75% -h 50% -x 12% -y 25% --class=ncspot kitty --class=scratch -e tmux -u new-session -A -s ncspot 'ncspot'
-#
 ctrl + alt + m
-    tdrop -ma -w 50% -h 35% -y 0 -x 25% --class=Todoist todoist --class=scratch
+    tdrop -n doist -ma -w 75% -h 50% -x 12% -y 25% --class=doist kitty --class=scratch
+
+# ctrl + alt + m
+#     tdrop -n doist -ma -w 75% -h 50% -x 12% -y 25% --class=doist kitty --class=scratch -e bash -c "clear; exec zsh"
+#     #tdrop -ma -w 50% -h 35% -y 0 -x 25% --class=Todoist todoist --class=scratch
 
 ctrl + alt + n
     tdrop -ma -w 75% -h 85% -x 12% -y 8% --class=firefox firefox --class=scratch
