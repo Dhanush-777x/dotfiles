@@ -8,9 +8,8 @@ sleep 2
 
 # Open Whatsapp in the 6th workspace
 gtk-launch brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop &
-sleep 1
+sleep 2
 bspc node -d 6
-sleep 1
 
 # Start two tmux sessions
 tmux -u new-session -d -s Term        # Create Term session
@@ -38,7 +37,7 @@ sleep 1
 brave &
 sleep 1  
 bspc node -d 1
-
+sleep 1
 
 # Return focus to the first workspace
 bspc desktop -f 2
