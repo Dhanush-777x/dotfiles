@@ -27,7 +27,7 @@ ctrl + @space
 
 #open Brave Browser
 super + w
-    brave	
+   flatpak run com.brave.Browser  
 
 # Open Nautilus File Manager
 super + e
@@ -68,11 +68,14 @@ super + alt + t
   xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/jgmenu/menu.txt --config-file=~/.config/bspwm/jgmenurc
 
 #Scratchpad
+# ctrl + alt + o
+#     tdrop -ma -w 75% -h 50% -x 12% -y 25% --class=ncspot kitty --class=scratch -e \
+    #tmux -u new-session -d -s ncspot 'ncspot' \; \
+    # new-window -n yazi 'yazi' \; \
+    # attach-session -t ncspot
+    #
 ctrl + alt + o
-    tdrop -ma -w 75% -h 50% -x 12% -y 25% --class=ncspot kitty --class=scratch -e \
-    tmux -u new-session -d -s ncspot 'ncspot' \; \
-    new-window -n yazi 'yazi' \; \
-    attach-session -t ncspot
+    tdrop -n yazi -ma -w 70% -h 40% -x 15% -y 30% --class=yazi kitty --class=scratch -e yazi
 
 ctrl + alt + m
     tdrop -n doist -ma -w 60% -h 20% -x 18% -y 0% --class=doist kitty --class=scratch

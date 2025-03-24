@@ -290,3 +290,31 @@
 2025/02/24 (23:55:40) | ===> btop++ v.1.4.0
 2025/02/24 (23:55:40) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
 2025/02/24 (23:55:40) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/24 (01:09:44) | WARNING: Failed to join _runner thread on exit!
+
+2025/03/24 (01:09:45) | ===> btop++ v.1.4.0
+2025/03/24 (01:09:45) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/03/24 (01:09:45) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/24 (01:09:55) | WARNING: Failed to join _runner thread on exit!
+
+2025/03/24 (01:09:56) | ===> btop++ v.1.4.0
+2025/03/24 (01:09:56) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/03/24 (01:09:56) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+
+2025/03/24 (01:10:40) | ===> btop++ v.1.4.0
+2025/03/24 (01:10:40) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/03/24 (01:10:40) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/24 (01:10:43) | WARNING: Failed to join _runner thread on exit!
+
+2025/03/24 (15:56:10) | ===> btop++ v.1.4.0
+2025/03/24 (15:56:10) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/03/24 (15:56:10) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+
+2025/03/24 (16:14:42) | ===> btop++ v.1.4.0
+2025/03/24 (16:14:42) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/03/24 (16:14:42) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/24 (16:14:51) | WARNING: Failed to join _runner thread on exit!
+
+2025/03/24 (16:26:33) | ===> btop++ v.1.4.0
+2025/03/24 (16:26:33) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/03/24 (16:26:33) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported

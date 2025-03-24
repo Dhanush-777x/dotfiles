@@ -50,7 +50,7 @@ dunst_font='JetBrainsMono NF Medium 9'
 dunst_border='0'
 
 # Gtk theme vars
-gtk_theme="Catppuccin-Dark"
+gtk_theme="Catppuccin-Mocha-Dark"
 gtk_icons="Papirus-Dark"
 gtk_cursor="Qogirr-Dark"
 geany_theme="z0mbi3-TokyoNight"
@@ -63,5 +63,5 @@ geany_theme="z0mbi3-TokyoNight"
 # - CustomAnimated (Set an animated wallpaper. "mp4, mkv, gif")
 ENGINE="CustomImage"
 CUSTOM_DIR="/path/to/dir"
-CUSTOM_WALL="/mnt/3462937862933E14/Wallpaper Customisation/Wallpapers/1381013.jpg"
+CUSTOM_WALL="/mnt/3462937862933E14/Wallpaper Customisation/Wallpapers/catppuccin_superhero.png"
 CUSTOM_ANIMATED="/home/dhanushsm/Downloads/raiden-mortal-kombat.3840x2160.mp4"
