@@ -318,3 +318,8 @@
 2025/03/24 (16:26:33) | ===> btop++ v.1.4.0
 2025/03/24 (16:26:33) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
 2025/03/24 (16:26:33) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+
+2025/03/24 (23:22:30) | ===> btop++ v.1.4.0
+2025/03/24 (23:22:30) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/03/24 (23:22:30) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/03/24 (23:36:12) | WARNING: Failed to join _runner thread on exit!

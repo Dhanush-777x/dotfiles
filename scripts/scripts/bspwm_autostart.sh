@@ -4,11 +4,11 @@
 dunstify "Welcome Back Dhanush!" "Setting Up Your Workspace. Please Wait..." -t 5000 &
 
 # Wait for a brief period after boot (instead of a fixed sleep)
-sleep 5  # You can reduce this if you want it faster
+sleep 1  # You can reduce this if you want it faster
 
 # Open WhatsApp in the 6th workspace (background it)
 gtk-launch com.brave.Browser.flextop.brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop &
-sleep 1
+sleep 2
 bspc node -d 6
 
 # Start two tmux sessions (background them)

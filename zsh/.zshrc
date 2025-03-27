@@ -15,6 +15,10 @@ export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export SUDO_PROMPT="Deploying root access for %u. Password pls: "
 export BAT_THEME="base16"
 
+# Flutter
+export ANDROID_HOME=$HOME/android-sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
@@ -151,6 +155,7 @@ alias ranger='ranger /mnt/3462937862933E14/'
 alias tmux="tmux -u"
 alias tmtd="~/tmux-tdrop-setup.sh"
 alias obs="cd /mnt/3462937862933E14/Obsidian-files/Dhanushsm-vault"
+alias ddsk="cd /mnt/3462937862933E14/"
 alias ff="fastfetch"
 
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
