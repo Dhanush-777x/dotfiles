@@ -1,4 +1,4 @@
-#  ███████╗██╗  ██╗██╗  ██╗██╗  ██╗██████╗ ██████╗  ██████╗
+  ███████╗██╗  ██╗██╗  ██╗██╗  ██╗██████╗ ██████╗  ██████╗
 #  ██╔════╝╚██╗██╔╝██║  ██║██║ ██╔╝██╔══██╗██╔══██╗██╔════╝
 #  ███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║██████╔╝██║     
 #  ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║     
@@ -68,28 +68,19 @@ super + alt + t
   xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/jgmenu/menu.txt --config-file=~/.config/bspwm/jgmenurc
 
 #Scratchpad
-# ctrl + alt + o
-#     tdrop -ma -w 75% -h 50% -x 12% -y 25% --class=ncspot kitty --class=scratch -e \
-    #tmux -u new-session -d -s ncspot 'ncspot' \; \
-    # new-window -n yazi 'yazi' \; \
-    # attach-session -t ncspot
-    #
+
 ctrl + alt + o
-    tdrop -n yazi -ma -w 70% -h 40% -x 15% -y 30% --class=yazi kitty --class=scratch -e yazi
+   tdrop -n yazi -ma -w 70% -h 40% -x 15% -y 30% --class=yazi kitty --class=scratch -e tmux -u attach-session -t yazi 
 
 ctrl + alt + m
     tdrop -n doist -ma -w 60% -h 20% -x 18% -y 0% --class=doist kitty --class=scratch
-
-# ctrl + alt + m
-#     tdrop -n doist -ma -w 75% -h 50% -x 12% -y 25% --class=doist kitty --class=scratch -e bash -c "clear; exec zsh"
-#     #tdrop -ma -w 50% -h 35% -y 0 -x 25% --class=Todoist todoist --class=scratch
 
 ctrl + alt + n
     tdrop -ma -w 75% -h 85% -x 12% -y 8% --class=firefox firefox --class=scratch
 
 ctrl + alt + i
      tdrop -ma -w 70% -h 75% -x 15% -y 15% --class=spotify spotify --class=scratch
-#
+
 # Power off, Reboot, Log out, Lockscreen, kill an app
 ctrl + super + alt + {p,r,q,l,k}
 	{systemctl poweroff, systemctl reboot,bspc quit,physlock -d,xkill}

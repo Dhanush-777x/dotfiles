@@ -63,5 +63,5 @@ geany_theme="z0mbi3-TokyoNight"
 # - CustomAnimated (Set an animated wallpaper. "mp4, mkv, gif")
 ENGINE="CustomImage"
 CUSTOM_DIR="/path/to/dir"
-CUSTOM_WALL="/mnt/3462937862933E14/Wallpaper Customisation/Wallpapers/catppuccin_superhero.png"
+CUSTOM_WALL="/mnt/3462937862933E14/Wallpaper Customisation/Wallpapers/617631.jpg"
 CUSTOM_ANIMATED="/home/dhanushsm/Downloads/raiden-mortal-kombat.3840x2160.mp4"
