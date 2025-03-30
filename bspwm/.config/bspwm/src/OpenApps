@@ -34,7 +34,7 @@ case "$1" in
 		NetManagerDM
 		;;
     --mixer)
-        rofi-mixer -theme ~/.config/bspwm/src/rofi-themes/Mixer.rasi
+        rofi-mixer
         ;;
 	--bluetooth)
 		rofi-bluetooth
