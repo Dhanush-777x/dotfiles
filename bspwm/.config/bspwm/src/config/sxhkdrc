@@ -12,7 +12,7 @@
 # 	OpenApps --KeyHelp
 
 # Show help
-ctrl + alt + slash
+super + alt + slash
     OpenApps --keybindings
     #~/.config/bspwm/src/keybindings.sh
 
