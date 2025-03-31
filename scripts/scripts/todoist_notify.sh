@@ -1,6 +1,10 @@
 
 #!/bin/bash
 
+export DISPLAY=:0
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
+export DBUS_SESSION_BUS_ADDRESS="unix:path=$XDG_RUNTIME_DIR/bus"
+
 #LOG_FILE="$HOME/.todoist_notify.log"
 TASKS=$(/home/dhanushsm/.cargo/bin/doist list --nointeractive)
 NOW=$(date +%s)
@@ -33,10 +37,10 @@ echo "$TASKS" | while IFS= read -r line; do
         #echo "$(date): 30 Min Before -> $THIRTY_MINS_BEFORE | 5 Min Before -> $FIVE_MINS_BEFORE | Now -> $NOW" >> "$LOG_FILE"
 
         if (( NOW >= THIRTY_MINS_BEFORE && NOW < THIRTY_MINS_BEFORE + 60 )); then
-            dunstify -u normal -t 10000 "$TASK_NAME" "⏳ 30 mins left!" 
+            (dunstify -u normal -t 10000 "$TASK_NAME" "⏳ 30 mins left!" & paplay "$HOME/.config/bspwm/sounds/gta5.mp3" &)
             #echo "$(date): 30 mins left for task -> $TASK_NAME" >> "$LOG_FILE"
         elif (( NOW >= FIVE_MINS_BEFORE && NOW < FIVE_MINS_BEFORE + 60 )); then
-            dunstify -u critical -t 10000 "$TASK_NAME" "🕐 5 mins left!" 
+            (dunstify -u critical -t 10000 "$TASK_NAME" "🕐 5 mins left!" & paplay "$HOME/.config/bspwm/sounds/gta5.mp3" &)
             #echo "$(date): 5 mins left for task -> $TASK_NAME" >> "$LOG_FILE"
         fi
     fi
