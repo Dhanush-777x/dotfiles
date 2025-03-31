@@ -8,8 +8,13 @@
 #
 
 # Show help
-F1
-	OpenApps --KeyHelp
+# F1
+# 	OpenApps --KeyHelp
+
+# Show help
+ctrl + alt + slash
+    OpenApps --keybindings
+    #~/.config/bspwm/src/keybindings.sh
 
 #|||----- Applications -----|||#
 
@@ -25,7 +30,7 @@ super + alt + Return
 ctrl + @space
 	OpenApps --menu
 
-#open Brave Browser
+# Open Brave Browser
 super + w
    flatpak run com.brave.Browser  
 
@@ -67,17 +72,21 @@ super + alt + t
 ~button3
   xqp 0 $(xdo id -N Bspwm -n root) && jgmenu --csv-file=~/.config/bspwm/src/jgmenu/menu.txt --config-file=~/.config/bspwm/jgmenurc
 
-#Scratchpad
+# Scratchpad
 
+# Scratchpad File Manager (yazi)
 ctrl + alt + o
    tdrop -n yazi -ma -w 70% -h 40% -x 15% -y 30% --class=yazi kitty --class=scratch -e tmux -u attach-session -t yazi 
 
+# Scratchpad Todoist Client (doist)
 ctrl + alt + m
     tdrop -n doist -ma -w 60% -h 20% -x 18% -y 0% --class=doist kitty --class=scratch -e doist
 
+# Scratchpad Firefox
 ctrl + alt + n
     tdrop -ma -w 75% -h 85% -x 12% -y 8% --class=firefox firefox --class=scratch
 
+# Scratchpad Spotify
 ctrl + alt + i
      tdrop -ma -w 70% -h 75% -x 15% -y 15% --class=spotify spotify --class=scratch
 
@@ -101,7 +110,7 @@ super + alt + w
 super + alt + a
 	OpenApps --android
 
-# Network Manager
+# Network Manager (Wifi, Ethernet)
 super + alt + n
 	OpenApps --netmanager
 
@@ -109,7 +118,7 @@ super + alt + m
 	OpenApps --mixer
 
 # Clipboard
-super + v
+alt + v
 	OpenApps --clipboard
 
 # Screenshot
@@ -128,21 +137,25 @@ super + BackSpace
 super + m
     ~/scripts/show-media.sh
 
-# Media Control
+# Media Control (Play)
 XF86AudioPlay
     playerctl play-pause
 
+# Media Control (Next)
 XF86AudioNext
     playerctl next
 
+# Media Control (Prev)
 XF86AudioPrev
     playerctl previous
 
 # Manage brightness
-#
+
+# Increase brightness
 XF86MonBrightnessUp
     brightnessctl -d nvidia_0 set +5%
 
+# Decrease brightness
 XF86MonBrightnessDown
     brightnessctl -d nvidia_0 set 5%-
 
@@ -201,6 +214,7 @@ super + r
 super + {_,ctrl + }{Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
 
+# Change focus of the Node or Swap Nodes
 super + {_,ctrl + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 

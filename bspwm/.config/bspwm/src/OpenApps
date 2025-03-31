@@ -101,6 +101,9 @@ case "$1" in
     --calendar)
         eww -c "$WIDGET_DIR" open --toggle date
         ;;
+    --keybindings)
+        keybindings
+        ;;
     *)
         echo "Invalid Option"
         ;;
