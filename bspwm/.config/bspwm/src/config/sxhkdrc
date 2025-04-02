@@ -80,7 +80,7 @@ ctrl + alt + o
 
 # Scratchpad Todoist Client (doist)
 ctrl + alt + m
-    tdrop -n doist -ma -w 60% -h 20% -x 18% -y 0% --class=doist kitty --class=scratch -e doist
+    tdrop -n doist -ma -w 60% -h 50% -x 18% -y 0% --class=doist kitty --class=scratch -e todoist
 
 # Scratchpad Firefox
 ctrl + alt + n

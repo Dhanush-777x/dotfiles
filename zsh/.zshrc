@@ -158,6 +158,9 @@ alias obs="cd /mnt/3462937862933E14/Obsidian-files/Dhanushsm-vault"
 alias ddsk="cd /mnt/3462937862933E14/"
 alias ff="fastfetch"
 
+# gcalcli 
+alias gag="gcalcli agenda --details end today tomorrow"
+
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
 #  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴

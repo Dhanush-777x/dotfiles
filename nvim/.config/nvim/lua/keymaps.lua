@@ -1,7 +1,6 @@
 local map = vim.keymap.set
 vim.g.mapleader = " "
 
-
 vim.api.nvim_create_user_command("Obs", function()
   vim.cmd("cd /mnt/3462937862933E14/Obsidian-files/Dhanushsm-vault") 
   print("Moved to /mnt/3462937862933E14/Obsidian-files/Dhanushsm-vault")
