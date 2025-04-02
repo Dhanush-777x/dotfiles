@@ -161,6 +161,11 @@ alias ff="fastfetch"
 # gcalcli 
 alias gag="gcalcli agenda --details end today tomorrow"
 
+# doist
+alias dt="doist"
+alias dta="doist create"
+
+
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #  ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │
 #  ┴ ┴└─┘ ┴ └─┘  └─┘ ┴ ┴ ┴┴└─ ┴

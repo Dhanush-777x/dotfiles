@@ -36,6 +36,7 @@ bspc rule -a "Whatsapp Web" desktop=6
 #window rules
 bspc rule -a Spotify:spotify state=floating sticky=on focus=on
 bspc rule -a Todoist state=floating sticky=on focus=on
+bspc rule -a notion-calendar-electron state=floating sticky=on focus=on
 bspc rule -a firefox state=floating sticky=on
 
 ## For two or three monitors configuration see https://github.com/gh0stzk/dotfiles/wiki/Two-or-more-monitors-setup
@@ -95,6 +96,6 @@ pidof -q polkit-gnome-authentication-agent-1 || { /usr/lib/polkit-gnome/polkit-g
 
 # Launch Apps 
 
-~/scripts/bspwm_autostart.sh &
+#~/scripts/bspwm_autostart.sh &
 
 # End one time code
