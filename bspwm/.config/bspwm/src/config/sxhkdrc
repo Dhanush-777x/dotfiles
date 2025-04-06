@@ -133,6 +133,10 @@ super + shift + s
 super + alt + b
 	OpenApps --bluetooth
 
+# bitwarden rofi pass manager
+super + alt + y
+    OpenApps --passmanager
+
 # PowerMenu
 super + BackSpace
 	OpenApps --powermenu

@@ -163,7 +163,7 @@ alias gag="gcalcli agenda --details end today tomorrow"
 
 # doist
 alias dt="doist"
-alias dta="doist create"
+alias dtc="doist create"
 
 
 #  ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
@@ -194,3 +194,13 @@ export PATH=$PATH:/home/dhanushsm/.spicetify
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_QPA_PLATFORMTHEME=qt6ct
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Flutter Setup By AR Rahman(Heartless)
+export PATH="$PATH:$HOME/Android/flutter/bin"
+export ANDROID_HOME="$HOME/Android/Sdk"
+export ANDROID_TOOLS="$HOME/Android/Sdk/cmdline-tools/latest"
+export ANDROID_PLATFORM_TOOLS="$HOME/Android/Sdk/platform-tools"
+PATH="$PATH:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS"
+# Chrome Setup
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+

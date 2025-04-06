@@ -51,6 +51,9 @@ case "$1" in
 	--powermenu)
         PowerMenu
         ;;
+    --passmanager)
+        rofi-rbw --selector-args "rofi -theme ~/.config/bspwm/src/rofi-themes/Bluetooth.rasi"
+        ;;
     --android)
 		AndroidMount
 		;;

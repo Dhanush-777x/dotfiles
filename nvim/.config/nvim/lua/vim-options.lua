@@ -19,6 +19,9 @@ opt.wrap = true
 opt.ignorecase = true
 opt.smartcase = true
 
+-- In commands like cd
+opt.wildignorecase = true
+
 -- Cursor line
 opt.cursorline = true
 

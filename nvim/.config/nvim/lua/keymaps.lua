@@ -1,9 +1,16 @@
 local map = vim.keymap.set
 vim.g.mapleader = " "
 
+-- Open Notes-vault
 vim.api.nvim_create_user_command("Obs", function()
   vim.cmd("cd /mnt/3462937862933E14/Obsidian-files/Dhanushsm-vault") 
   print("Moved to /mnt/3462937862933E14/Obsidian-files/Dhanushsm-vault")
+end, {})
+
+-- Open Mounted Files Disk
+vim.api.nvim_create_user_command("Ddsk", function()
+  vim.cmd("cd /mnt/3462937862933E14/") 
+  print("Moved to /mnt/3462937862933E14/")
 end, {})
 
 -- Save current file
@@ -77,3 +84,6 @@ map('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Togg
 map('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Spectre Search current word", noremap = true })
 map('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word", noremap = true })
 map('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file", noremap = true})
+
+-- Markdown Preview
+map("n", "<leader>p", ":MarkdownPreviewToggle<CR>", { noremap = true, silent = true, desc = "Toggle Markdown Preview" })
