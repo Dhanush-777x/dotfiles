@@ -341,3 +341,17 @@
 2025/03/31 (15:22:36) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
 2025/03/31 (15:22:36) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
 2025/03/31 (15:22:44) | WARNING: Failed to join _runner thread on exit!
+
+2025/04/07 (10:17:58) | ===> btop++ v.1.4.0
+2025/04/07 (10:17:58) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/07 (10:17:59) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/07 (10:18:37) | WARNING: Failed to join _runner thread on exit!
+
+2025/04/16 (23:39:40) | ===> btop++ v.1.4.0
+2025/04/16 (23:39:40) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/16 (23:39:40) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2025/04/16 (23:39:50) | WARNING: Failed to join _runner thread on exit!
+
+2025/04/17 (18:12:54) | ===> btop++ v.1.4.0
+2025/04/17 (18:12:54) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2025/04/17 (18:12:54) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
